@@ -9,7 +9,7 @@ import com.codeborne.selenide.impl.Html;
 
 import static com.codeborne.selenide.Selenide.*;
 
-public class Mypage_Cancel extends AppTest {
+public class MypageCancel extends MypageStart {
 
 	@Test(priority = 1)
 	public void Mypage_Recancel() throws Exception {

@@ -9,7 +9,7 @@ import com.codeborne.selenide.impl.Html;
 
 import static com.codeborne.selenide.Selenide.*;
 
-public class Mypage_Orderlist extends AppTest {
+public class MypageOrderlist extends MypageStart {
 
 	@Test(priority = 1)
 	public void MypageMain() throws Exception {

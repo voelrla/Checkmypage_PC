@@ -9,7 +9,7 @@ import com.codeborne.selenide.impl.Html;
 
 import static com.codeborne.selenide.Selenide.*;
 
-public class Mypage_Nuseticket extends AppTest {
+public class MypageNuseticket extends MypageStart {
 
 	@Test(priority = 1)
 	public void Mypage_Nuticketapply() throws Exception {

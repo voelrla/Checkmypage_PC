@@ -9,7 +9,7 @@ import com.codeborne.selenide.impl.Html;
 
 import static com.codeborne.selenide.Selenide.*;
 
-public class Mypage_QnA extends AppTest {
+public class MypageQnA extends MypageStart {
 	@Test(priority = 1)
 	public void Mypage_Rcoupon() throws Exception {
 		open("http://www.wemakeprice.com/mypage/deal_qna_list");

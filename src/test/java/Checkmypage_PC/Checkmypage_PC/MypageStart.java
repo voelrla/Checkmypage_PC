@@ -2,7 +2,6 @@ package Checkmypage_PC.Checkmypage_PC;
 
 import static com.codeborne.selenide.Selenide.open;
 
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -15,10 +14,11 @@ import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.AssertJUnit;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeTest;
 import com.codeborne.selenide.WebDriverRunner;
 
-public class AppTest {
+public class MypageStart {
 	public static WebDriver driver;
 
 	@BeforeTest
@@ -65,6 +65,11 @@ public class AppTest {
 		int code = connection.getResponseCode();
 		System.out.println("ResponseCode :" + code);
 		AssertJUnit.assertEquals(200, code);
+	}
+
+	@AfterMethod
+	public void end() {
+
 	}
 
 }

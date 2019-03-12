@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Checkmypage_PC.Checkmypage_PC.Mypage_Point">
+      <class name="Checkmypage_PC.Checkmypage_PC.MypageCancel">
         <methods>
-          <include name="Mypage_Rcoupon"/>
           <include name="setup"/>
+          <include name="end"/>
+          <include name="Mypage_Decancel"/>
         </methods>
-      </class> <!-- Checkmypage_PC.Checkmypage_PC.Mypage_Point -->
+      </class> <!-- Checkmypage_PC.Checkmypage_PC.MypageCancel -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
