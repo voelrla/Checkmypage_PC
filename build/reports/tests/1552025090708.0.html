@@ -1,0 +1,346 @@
+<!DOCTYPE html><!--[if lt IE 7]><html lang="ko" class="lt-ie9 lt-ie8 lt-ie7"> <![endif]--><!--[if IE 7]><html lang="ko" class="lt-ie9 lt-ie8"> <![endif]--><!--[if IE 8]><html lang="ko" class="lt-ie9"> <![endif]--><!--[if IE 9 ]><html lang="ko" class="ie9"> <![endif]--><!--[if (gt IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" lang="ko"><!--<![endif]--><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>원더쇼핑 :: 내 여정</title>
+    <link rel="icon" href="https://www.wonder-shopping.com/static/img/favicon.ico" />
+    
+        <meta name="description" content="명품부터 생필품까지! 내가 찾는 그 상품, 여러 쇼핑몰 둘러 볼 필요 없이 원더쇼핑 하나면 끝!" />
+    <meta name="keywords" content="원더쇼핑, 위메프, 원더페이, 가격비교, 쇼핑몰, 홈쇼핑, 실시간베스트, 핫딜, 브랜드, 소셜커머스, 인기상품" />
+  
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="원더쇼핑" />
+    <meta itemprop="description" content="명품부터 생필품까지! 내가 찾는 그 상품, 여러 쇼핑몰 둘러 볼 필요 없이 원더쇼핑 하나면 끝!" />
+    <meta itemprop="image" content="https://www.wonder-shopping.com/static/img/ws_og_img.jpg" />
+    
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@wondershopping.official" />
+    <meta name="twitter:title" content="원더쇼핑 - 당신의 가슴을 뛰게 할 새로운 쇼핑!" />
+    <meta name="twitter:description" content="명품부터 생필품까지! 내가 찾는 그 상품, 여러 쇼핑몰 둘러 볼 필요 없이 원더쇼핑 하나면 끝!" />
+    <meta name="twitter:creator" content="@wondershopping.official" />
+    <meta name="twitter:image" content="https://www.wonder-shopping.com/static/img/ws_og_img.jpg" />
+    
+    <!-- Open Graph data -->
+    <meta property="og:title" content="원더쇼핑 - 당신의 가슴을 뛰게 할 새로운 쇼핑!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.wonder-shopping.com/mypage/reservation/?&amp;is_login=true" />
+    <meta property="og:image" content="https://www.wonder-shopping.com/static/img/ws_og_img.jpg" />
+    <meta property="og:description" content="명품부터 생필품까지! 내가 찾는 그 상품, 여러 쇼핑몰 둘러 볼 필요 없이 원더쇼핑 하나면 끝!" /> 
+    <meta property="og:site_name" content="원더쇼핑" />
+    <meta property="fb:app_id" content="@wondershopping.official" />
+    
+    <!-- LOG None, None, , windows 7 -->
+    <meta property="og:wsp_mid" content="16342726" />
+    <meta property="og:wsp_remote_ip" content="211.174.55.156, 172.31.1.65" />
+    
+    <meta property="og:wsp_channel" content="WMPP" true="" />
+    
+    <meta property="og:wsp_page_name" content="TR-SCH" />
+    <meta property="og:wsp_serviceCode" content="WSP" />
+    <meta property="og:wsp_traffic_partner_code" content="" />
+    <meta property="og:wsp_referer_url" content="http://www.wemakeprice.com/mypage/buylist" />
+    <meta property="og:wsp_search_term" content="" />
+    <meta property="og:wsp_search_matches" content="" />
+    <meta property="og:wsp_group_no" content="1" />
+    <meta property="og:wsp_current_group" content="1" />
+    
+    <meta property="og:wsp_utm_source" content="" />
+    <meta property="og:wsp_utm_term" content="" />
+    <meta property="og:wsp_utm_medium" content="" />
+    <meta property="og:wsp_utm_content" content="" />
+    <meta property="og:wsp_utm_campaign" content="" />
+  
+  
+  
+    <meta property="og:wsp_idx" content="" />
+  <!-- log_data -->
+    <meta property="og:wsp_outlink" content="" />
+    <meta property="og:wsp_vendor" content="" />
+    <meta property="og:wsp_epid" content="" />
+    <meta property="og:wsp_ws_1depth" content="" />
+    <meta property="og:wsp_ws_2depth" content="" />
+    <meta property="og:wsp_ws_3depth" content="" />
+    <meta property="og:wsp_ws_4depth" content="" />
+    <meta property="og:wsp_ws_5depth" content="" />
+    <meta property="og:wsp_brand" content="" />
+    <meta property="og:wsp_ffuid" content="" />
+    <meta property="og:wsp_partner_type" content="" />
+    <meta property="og:wsp_agency_id" content="" />
+    <meta property="og:wsp_price" content="" />
+    <meta property="og:wsp_product_name" content="" />
+    <meta property="og:wsp_target_url" content="" />
+  
+    <!-- // LOG -->
+
+    
+<!-- <link rel="stylesheet" type="text/css" href="//static.wonder-shopping.com/fefa8318c16e35e1861ef724d1132f7efb081f1a/p/style.min.css"> -->
+<!-- <link rel="stylesheet" type="text/css" href="//static.wonder-shopping.com/44b206c4aec9ac937fb6a21a8736db41e840b141/p/style.min.css"> -->
+<!--<link rel="stylesheet" type="text/css" href="//static.wonder-shopping.com/f675370bee345006145dfec2643e8a839e998240/p/style.min.css">-->
+<!--<link rel="stylesheet" type="text/css" href="//static.wonder-shopping.com/442d87c3758415696509cfb24d7093627dad66c9/p/style.min.css">-->
+<!--<link rel="stylesheet" type="text/css" href="//static.wonder-shopping.com/cb489a7eca95754ccb0323758a41374dc9067837/p/style.min.css">-->
+<link rel="stylesheet" type="text/css" href="//static.wonder-shopping.com/ea8477bc207e5ca639777b4b5b578c2e5730efca/p/style.min.css" />
+
+
+
+
+
+    
+<script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/ec.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/linkid.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-KVK68F6"></script><script src="https://connect.facebook.net/signals/config/401263780284288?v=2.8.42&amp;r=stable" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script src="/static/js/lib/jquery.resizeEnd.outside.js" defer=""></script>
+<script src="/static/js/lib/velocity.min.js" defer=""></script>
+<script src="/static/js/lib/swiper-4.0.3.min.js" defer=""></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+
+  <script type="text/javascript" src="/static/js/lib/es6-promise.auto.min.js" defer=""></script> 
+  <script type="text/javascript" src="/static/js/lib/vue.js" defer=""></script>
+  <script type="text/javascript" src="/static/js/lib/axios.min.js" defer=""></script>
+  <script type="text/javascript" src="/static/js/lib/underscore.js" defer=""></script>
+  <script type="text/javascript" src="/static/js/lib/vue-cookies.js" defer=""></script>
+  <script type="text/javascript" src="/static/js/lib/vue-ls.min.js" defer=""></script>
+  
+  <script type="text/javascript" src="/static/top/wshop-image-loader.js?1548898718.117556" defer=""></script>
+  <script type="text/javascript" src="/static/top/utils.js?1548898718.117556" defer=""></script>
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-18774526-20"></script>
+    
+    <script type="text/javascript">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-18774526-20');
+
+    var ep_token='',keyword='',device='pc',mid='',group_no='1',group_name='Women';
+    var isWMP = false;
+    var isWShop = false;
+    const SPA_API = 'https://api.wonder-shopping.com';
+
+    /* */
+__WonderShopping = {
+    _getPCStamp: function() {
+        var k ="wlogStamp=";
+        var cookies = document.cookie.split(';');
+        for(var i=0;i&lt;cookies.length;i++) {
+            var cookie = cookies[i];
+            console.log(cookie);
+            while(cookie.charAt(0)==' ') cookie = cookie.substring(1, cookie.length);
+            if(cookie.indexOf(k) == 0) return cookie.substring(k.length,cookie.length);
+        }
+        return '';
+    },
+    getDeviceUUID: function() {
+        var pcstamp = '';
+        if(pcstamp == '') pcstamp = this._getPCStamp();
+        return pcstamp;
+    },
+    User: {
+        groupInfo: {
+            defaultGroupNo: '1',
+            recommGroupNo: '1',
+            defaultGroupName: 'Women',
+            currentGroupNo:'1'
+        },
+        getMID: function() {
+            return '16342726'
+        },
+        getBirthYear: function() {
+            return '1988'
+        },
+        getGender: function() {
+            const GENDER =['','M','F'];
+            return GENDER[parseInt(2)]
+        },
+        getGroupInfo: function() {
+            return __WonderShopping.User.groupInfo;
+        },
+        setCurrentGroupNo: function(groupNo) {
+            __WonderShopping.User.groupInfo.currentGroupNo = groupNo;
+        }
+    }
+}
+    </script>
+  <script type="text/javascript" src="/static/js/p/init.pc.js?1548898718.117556" defer=""></script>
+    
+    
+    
+    
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '401263780284288');
+      fbq('track', 'PageView');
+    </script>
+    <noscript>&lt;img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=401263780284288&amp;ev=PageView&amp;noscript=1"
+    /&gt;</noscript>
+    <!-- End Facebook Pixel Code -->
+    <script type="application/javascript">
+    fbq('track', 'Lead');
+    </script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KVK68F6');</script>
+<!-- End Google Tag Manager -->
+    <meta property="wlog:pcstamp" content="4645cc87-b2b1-448d-9d68-e818f9790e4d" /></head>
+<!-- [D] 메인 홈인 경우 body요소에 wds_main 클래스 추가 -->
+
+<body class="myzone no-margin">
+<div id="skip_navi">
+  <a rel="bookmark" href="#gnb"><span class="txt">주메뉴 바로가기</span></a>
+  <a rel="bookmark" href="#srh_kwd"><span class="txt">검색창 바로가기</span></a> 
+  <a rel="bookmark" href="#content"><span class="txt">본문 바로가기</span></a>
+</div>
+ 
+<div id="wrap" data-gtm-page="">
+
+<header id="header" role="banner" class="fixed"><div data-gtm-page="ShoppingRecommend" class="global_width"><h1><a href="/" title="원더쇼핑 홈으로 이동"><img src="/static/img/p/logo.png" width="240" height="50" alt="원더쇼핑" /></a></h1> <section class="srh_area"><div class="srh_input "><form name="search" action="/search"><fieldset><legend>키워드로 검색하기</legend> <div class="kwd_input"><label for="srh_kwd" class="blind">검색어 입력</label> <input type="text" name="q" id="srh_kwd" placeholder="매일매일! 두근두근!" value="" autocomplete="off" /> <div class="sorting_condition "><a href="" class="selected_view srh_dropbx">전체</a> <div class="ly_opt"><ul class="lst_opt"><li><a href="">전체</a></li></ul></div></div></div> <div class="ly_srh_helper"><h3 class="blind">추천 검색어</h3> <ol class="lst_live_kwd"></ol> <div data-wsp-section-name="RCMD-ITEM" data-gtm-section="SearchRecommend" class="goods_show wsp_section"><h3 class="tit">인기 추천상품</h3> <div class="frame"><ul></ul></div> <div class="ctrl_direction"><!----></div></div> <div class="srhed_kwd_set"><button type="button" onclick="Log4ws.HIT({&quot;page_name&quot;:&quot;TR-SCH&quot;,&quot;section_name&quot;:&quot;GNB-SRH&quot;, &quot;pagination&quot;:&quot;AUTO-OFF&quot;});">자동저장 끄기</button></div></div> <button type="button" data-gtm-section="GnbSrh" data-gtm-element="SrhBtn" data-gtm-json="{&quot;label&quot;:&quot;검색하기:&quot;}" data-action="Click" class="btn_srh">검색하기</button> <input type="hidden" name="cat1" id="cat1" value="" /> <input type="hidden" name="cat2" id="cat2" value="" /></fieldset></form></div></section> <div class="dp_aside is_login "><button type="button" class="btn_mypage">마이페이지 메뉴 보기</button> <div class="mypage_menu"><div class="btn_area"><strong class="user_name">
+                  이승재
+                  <span>님</span></strong> <a href="/logout" class="btn_logout">로그아웃</a></div> <ul class="lst_menu"><li><a href="/mypage/latestitems">최근 본 상품</a></li> <li><a href="/mypage/wishlist">찜한 상품</a></li> <li><a href="/mypage/brands">찜한 브랜드</a></li> <li><a href="/mypage/malls">찜한 쇼핑몰</a></li> <li><a href="/mypage/reservation/">원더투어 내여정</a></li> <li><a href="http://www.wemakeprice.com/mypage/qna">고객센터</a></li></ul></div></div> <div class="fn_bookmark"><button type="button">즐겨찾기</button></div> <div data-wsp-section-name="QUICK" data-gtm-section="QuickMenu" class="link_area wsp_section"><button type="button" class="btn_all_view">전체 카테고리</button> <ul class="cate"><li data-wsp-idx="1" data-wsp-mark="패밀리세일" data-gtm-element="FamilySale" data-gtm-json="{&quot;label&quot;:&quot;패밀리세일&quot;,&quot;index&quot;:&quot;1&quot;}"><a href="https://m.wonder-shopping.com/event/familySale?isOpenStack=Y" data-action="Click" class="sale">패밀리세일</a></li> <li data-wsp-idx="2" data-wsp-mark="핫딜" data-gtm-element="HotDeal" data-gtm-json="{&quot;label&quot;:&quot;핫딜&quot;,&quot;index&quot;:&quot;2&quot;}"><a href="https://m.wonder-shopping.com/home/shopping/deal" data-action="Click" class="deal">핫딜</a></li> <li data-wsp-idx="3" data-wsp-mark="빈방특가" data-gtm-element="HotelEmpty" data-gtm-json="{&quot;label&quot;:&quot;빈방특가&quot;,&quot;index&quot;:&quot;3&quot;}"><a href="https://mkhotel.wonders.app/list/empty?isOpenStack=Y&amp;isLogin=true" data-action="Click" class="empty">빈방특가</a></li> <li data-wsp-idx="4" data-wsp-mark="스타일" data-gtm-element="Style" data-gtm-json="{&quot;label&quot;:&quot;스타일&quot;,&quot;index&quot;:&quot;4&quot;}"><a href="https://style.wonder-shopping.com/home?__wspview_type=40" data-action="Click" class="style">스타일</a></li> <li data-wsp-idx="5" data-wsp-mark="원더항공" data-gtm-element="Air" data-gtm-json="{&quot;label&quot;:&quot;원더항공&quot;,&quot;index&quot;:&quot;5&quot;}"><a href="https://air.wonders.app/" data-action="Click" class="new air">원더항공</a></li> <li data-wsp-idx="6" data-wsp-mark="원더투어" data-gtm-element="Tour" data-gtm-json="{&quot;label&quot;:&quot;원더투어&quot;,&quot;index&quot;:&quot;6&quot;}"><a href="https://m.wonder-shopping.com/home/tour/recommend" data-action="Click" class="tour">원더투어</a></li> <li data-wsp-idx="7" data-wsp-mark="공연티켓" data-gtm-element="Ticket" data-gtm-json="{&quot;label&quot;:&quot;공연티켓&quot;,&quot;index&quot;:&quot;7&quot;}"><a href="https://m.wonder-shopping.com/ticket?isOpenStack=Y&amp;__wspview_type=40" data-action="Click" class="ticket">공연티켓</a></li> <li data-wsp-idx="8" data-wsp-mark="해외쇼핑" data-gtm-element="Overseas" data-gtm-json="{&quot;label&quot;:&quot;해외쇼핑&quot;,&quot;index&quot;:&quot;8&quot;}"><a href="https://m.wonder-shopping.com/shopping/overseas?isOpenStack=Y&amp;__wspview_type=40" data-action="Click" class="shopping">해외쇼핑</a></li> <li data-wsp-idx="9" data-wsp-mark="백화점" data-gtm-element="Department" data-gtm-json="{&quot;label&quot;:&quot;백화점&quot;,&quot;index&quot;:&quot;9&quot;}"><a href="https://m.wonder-shopping.com/shopping/department?isOpenStack=Y&amp;__wspview_type=40" data-action="Click" class="depart">백화점</a></li></ul> <ul class="link"><li data-wsp-idx="10" data-wsp-mark="기획전" data-gtm-element="Event" data-gtm-json="{&quot;label&quot;:&quot;기획전&quot;,&quot;index&quot;:&quot;10&quot;}"><a href="https://www.wonder-shopping.com/promotion" data-action="Click">기획전</a></li> <li data-wsp-idx="11" data-wsp-mark="위메프" data-gtm-element="WeMakePrice" data-gtm-json="{&quot;label&quot;:&quot;위메프&quot;,&quot;index&quot;:&quot;11&quot;}"><a href="https://g.wonder-shopping.com/out/r?safeUri=53616c7465645f5f250cbaa9b38faf560ee4b69a49afe5bcd28c521a0c9c884210220b7401c7a363832f225569f49bdd4dbb6f07016cba8f83302c5ea8c92c9cbf5613a8891d3408540743f41d7e119c67793f811cb3f1034c50ed0d546606273b19750b4097a5d34b716c8112e5811b8e2161375b8b9a26aca59abdf3bea28fe15bbb0e01f0b7759921e8f9d2abe2c2&amp;safeJsonData=53616c7465645f5fd80e189db74b95b9257ad29fda356a5b8718133ce3ce51c91310040e56b73c818589efd8da3f31a9b05ac1db73f12ce34d23f5f93b5271b7f3c2366671359b7997bd0a799556863e7f5faa063d2dae4e1ea4157ec6c0498dfbbff5b00e83714879c0033e84d8d21581bd4e2b1df66cd3d0c61b6053dc5592e57cc2a426a480cb2766f76de711277bc46e1dab816302efafa5797203b63fd3e59924de874b26c52ccf470741a7f30347e003b0df1d76f6e977bae8da4567c4b6fc22a13803c6911b1949bc7ca71e1cf9a07809e20c028622a619da59da84446b9afb0d62496a6ae324b5f4496f553b1937330f6a8da6ad49f1af1e96d5cd23bfe7c01a0ec8126a52dc22f17cfef4edb1e39420111933aea1456c99af370c045ec4bc3c172574443961aa35b9bdcac19e135bc8ee197a07244deb0088b9d7512dc811971b4dea1c8867c8e159e77f41242729dc6b42c0c86092769adbed1982550ee8f1b2cc673d0e4784a87ce4409d5e955893aa68512290a676783690ea985afb76d84da373e8bdff2ce56efb27d789b76f8d666e366897bbbf896800dc206e641ca0b86d4e82a6086417fa426f951055d674524cd33d0a179109afc540640118be0c081da035eba09d2a7eeb571564b56fa51304a0b577250c88abe2dc4029fbdf641ddabed03bdb3cf4e985b5d757849018a04250f13dd3b201e999c59bc2047b00a0d7fde62e1375654b597419a5bbe09b5cd3bcecc0f3e342acd31a242291a3f627f4a8dc70d12e77bcf9781203730b3baae196c10460a9786e4cfa7bc3f086b8f498d9716fd89f99da8c34e1b78442754dc14f364cf96f483d40cb78fcc7b5452f1be570b9a03c27b9482364&amp;safeGtmJsonData=53616c7465645f5fd4dfb377d3b7b3602acfecb44750c40a68ceab4de10c314af989b15cbde896b35e80b1958c26b21e7e1182e4b8c38953b8a3288671cd8513" target="_blank" data-action="Click" title="위메프 홈으로 이동">위메프</a></li></ul></div> <div id="gnb" class="wsp_section"><nav><ul data-wsp-section-name="FLOAT-CAT" data-gtm-section="FloatCat" class="lst_cate "></ul></nav> <a href="/url?_sf=y&amp;q=&amp;s=nav-%EB%AA%B0%EA%B2%80%EC%83%89&amp;g=1&amp;t=&amp;data=%7B%22link%22%3A%22%2Fmall%22%2C%22vendor%22%3A%22wshopping%22%2C%22title%22%3A%22%EB%AA%B0%EA%B2%80%EC%83%89%22%7D&amp;mid=16342726&amp;remote_ip=211.174.55.156%2C%20172.31.1.65&amp;channel=WMPP&amp;page_name=TR-SCH&amp;serviceCode=WSP&amp;traffic_partner_code=&amp;referer_url=http%3A%2F%2Fwww.wemakeprice.com%2Fmypage%2Fbuylist&amp;search_term=&amp;search_matches=&amp;group_no=1&amp;current_group=1&amp;utm_source=&amp;utm_term=&amp;utm_medium=&amp;utm_content=&amp;utm_campaign=&amp;idx=&amp;outlink=&amp;vendor=wshopping&amp;epid=&amp;ws_1depth=&amp;ws_2depth=&amp;ws_3depth=&amp;ws_4depth=&amp;ws_5depth=&amp;brand=&amp;ffuid=&amp;partner_type=CPS&amp;agency_id=&amp;price=&amp;product_name=%EB%AA%B0%EA%B2%80%EC%83%89&amp;target_url=%2Fmall&amp;section_name=FLOAT-MBL&amp;pagination=&amp;mark=&amp;kindof=HIT&amp;user_agent=Mozilla%2F5.0%20(Windows%20NT%206.1%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F72.0.3626.121%20Safari%2F537.36&amp;user_res=1400x2560&amp;current_url=https%3A%2F%2Fwww.wonder-shopping.com%2Fmypage%2Freservation%2F%3F%26is_login%3Dtrue&amp;product_id=" data-category="quickmenu-hotel" data-action="" data-label="/mall" title="브랜드/몰검색 페이지로 이동" class="btn_srh_mall">브랜드/몰검색</a> <div data-wsp-section-name="FLOAT-QUICK" data-gtm-section="QuickMenu" class="link_area wsp_section"><ul><li data-wsp-idx="4" data-wsp-mark="항공" data-gtm-element="Air" data-gtm-json="{&quot;label&quot;:&quot;항공&quot;,&quot;index&quot;:&quot;1&quot;}"><a href="https://g.wonder-shopping.com/out/r?safeUri=53616c7465645f5fcffb7d9103734c3eecea8520663a1be4045c985ff49afa84bc7a8e4e90f9c2083593edba98f5f5532718bc846fd23d861b2ba46feb0d95a8d0a018fb68ed98a2bb4dc72b8824e603acec0123cc753607f4f79c2e3483c0c54cdac933b4e8bf6339661e000bcaafd7&amp;safeJsonData=53616c7465645f5fe17c765bd2593e60710a0aa98340a80ffbb0a872504c4e9dafac0d205986e56059c0b7ad93fcce5da37b8200dd78d2856c6617fa11f47fbf5991bdd8ac1bad67dfe755d55581ba7a640c3922fc98efcf4cd5ffd1a87ac20ce88bf883e3e559ca79f520ac743d976e77aeb8893a9980ece707b450fc2fd447ede97a718d4e31373ce8b878118f7b4548b67d692de70d88f8a64d58b33b9222fa5741fd7b39160591f4ad36d6597ff181dde1ae9f41d0574e71eb5f546338af8c58025e1ee3254c4e7cb431376e2acb050662bb89232ded84fd2a8c158ca8c41a6fd38c9cc2c8d212ff35ba1a3aa4c7cbbb54fc79edba99793a54b1d6675b35f3bc6d42747184f3b2076217e0f5cc3cbd30bcc9daefa0c062730b952a71e2eeafe22b3347b7ba34b653379f835d8b022e5508084ab34ede75f87ba4263be15092d43013eddc36b3910fd17628447785d37e5a5dfb925c2257f1f831db572e7fabc0a2a3e61bcbae83b4ceb43494429d83dd947bfbd6347fe1b102c4f8544a28348284cf89953266749472062a8c16b1fc51118be2509272b26229abbd2483c3a6b4a3df0b4266224a25245547e796e6ae5863cd608bf2f9bcf0e434d22e86de2f0ae40185ca66389a59048766257fef5afaef0b75f0c46a09aa7d23207464a71db444482d77b0dfb0b69335ff2d968854c3937aeb6fe2ac334dc612e5aaa6022d6a934f244c753608e52ea4db547737bbdabad544d0c15170925155c07f3736a2486d2709afd2e1ba4344eccdb719d93afe9cbddbbeea359e1ef88985d5336f6f6eb5ced135a1818c3d5c165ad642e63735cdf1b8688f114844fe0d1baa93f2ee6978b9503fe6c5ae5aefdad5cbb4d1&amp;safeGtmJsonData=53616c7465645f5ff194458516a10c6a3ee1676f1a0f3c2b85933211d009e438168190d11e5da4181ea2627c54f42edc" data-action="Click" class="new">항공</a></li> <li data-wsp-idx="3" data-wsp-mark="호텔" data-gtm-element="Hotel" data-gtm-json="{&quot;label&quot;:&quot;해외호텔&quot;,&quot;index&quot;:&quot;2&quot;}"><a href="https://g.wonder-shopping.com/out/r?safeUri=53616c7465645f5f2ec3b593211e0a32a38a7954a85d62daef83807dd9964b60cffdbe743fd3243649adfe7d419d96aa5bf4ab799125eada4c3cd285cc9a24a14e1be682ef42a15658c973643b197c61b8ea7f274cda9fac12ff5b67bcfe1eb24ea176e6faf4fcc3e829a8b37f4095e2&amp;safeJsonData=53616c7465645f5f77efc8f05b0fe61b808f56df512ca77d7b9fbdc4bb5fcc6eb96df397bab229b1431e3b3a477d90b61bb499d7f4305fc5c7083f122755ff6b83e82c72ccedb837517e0fdea214628ecad5f45f581a6c4b78cafe2f28ff27b15f2dde22adcbbfd0db6578d153f1fd080956de0c50b8f5b354e859a8843a995ab0c7316f5cd19956dccff8933a636b7f407ebbbea1b1043bf7ad02a5998e42551cccc0c0694adb0f90504473613549a7525645d4e01f329e27db65028d7fd6a7457e30d2b72a03146507b0b4cee6a8c16e197f1b49e9f52b500a284d97c9d432fc54052c72c2aafa34247e6b678d44b465280b60f4dadb238deee690565b6ed2ea9bea148b607525e9feffe1498e272615d65fe3aaf2edbafc64b78aec59a8bc4124093c84b8b41af2eef1f28676cc1a2b66508db59ce7e98cd1faba4cc0906cb79017dcfc956b1a95aa5f4edf3e81be2d103e382a43d0650e021e099fa4bf313bb4b408aba23146f9bd09ddf48bde112cf2ab0e250ad80c303dc619ebf303e5caa077dae51d802d1ba7c30a7b3cc643a1bd4ade448d47b6c6a845dad4b8c4c6844d96061cb3f0d7fa2b1b6d19a988ba2eb389eadcb6c5b699f1d70e0afa2cb58fc357e4b5cffda25930d9214a375fc33929c5dbde02521d73d461a804d5954c9998aa069be03a0082ae9a90c091ad4f0f96d78e267b46e7779f3bf51973ffc318c388d6eb3856252fb0f84d019ec6db92f29f211ec156442aca90af8bfcd9ca057aa30769b28e5fe5ee3199455a7624d611fdac817f650273b085b9d78212eb61576aef6e83ae3b43c7bda8ed652a30def32a7dfa04c727b3d6c4c2574f971b7be7f687113a837bb1d33ee91ff157ba&amp;safeGtmJsonData=53616c7465645f5f26d698144bee066cda53c67096d906035bf6482f06e14b11218db41c318365ddca46b6a75573b419" data-action="Click">해외호텔</a></li> <li data-wsp-idx="3" data-wsp-mark="호텔" data-gtm-element="Hotel" data-gtm-json="{&quot;label&quot;:&quot;국내숙박&quot;,&quot;index&quot;:&quot;3&quot;}"><a href="https://login.wid.wemakeprice.com/loginCheck?redirect_uri=https://mhotel.wonders.app/inkorea" data-action="Click">국내숙박</a></li> <li data-wsp-idx="1" data-wsp-mark="기획전" data-gtm-element="Event" data-gtm-json="{&quot;label&quot;:&quot;기획전&quot;,&quot;index&quot;:&quot;4&quot;}"><a href="https://www.wonder-shopping.com/promotion" data-action="Click">기획전</a></li> <li data-wsp-idx="2" data-wsp-mark="원더직구" data-gtm-element="WonderDirect" data-gtm-json="{&quot;label&quot;:&quot;원더직구&quot;,&quot;index&quot;:&quot;5&quot;}"><a href="https://g.wonder-shopping.com/out/r?safeUri=53616c7465645f5faaceb38fa0d59883ad0aedefdd76b4361ff3ef0966f7c25e31577dad6cb13d8617b724af7e0e0337338269ee8a24785ee95182d506003589847c41ce135eee62bff209790ec01b2fa0ea0f966638b62478e88c155bed74f67d094dbeb7a6f0f1dfb86a13e5c3ba5f5e13f7859b23021272ffe3ac974b2093&amp;safeJsonData=53616c7465645f5ff39491f3aa232bf25a1c04ee3dcd34fc144667d4e583d08f214aca57c4fc4401c7a7cbef5870a0e22eb9cc6ef9505adcc6045c59f0d872ae8e86ca2440d41badd18fa13ae102694ffb3dd3d1ae563343fcbe3c2f5f40b224a93baeda68d924e6437451f32704a2ab9702d36ff5067edf53d2cd52ec70ba8151449d0da9639a10623d6cd606bdfc46a353d29dc8c637c7863132a93a2b21bcec66d64900297451604f3b99105e41f8bb150f1d0cbda7aaa0413bcf4edc13b3dbe2d0f433cfa286109d301d6c09ee50528c65fa0706eefec309a12a9b37905d0bd56a89e29143eec5da30f8cda599cc0780e721a6bc859183070ce1b5adc68ccca7bab993944f933ef2edadce900f40c38dc59204d921ce26be02e4ae1952abecb50551c6ceaa8ee56c0fa5ed41d90cc4f49e25c8a4f5a3f63f61093b93befb1adfae20aaf4326f6db3ae720a53919e0b266632bdbb523619eff2ad0313b152c3a7d7823e2f2444296d80dc514118b2d328a0a8ab426bbebfab387617c1c1bbac2606261490c445d206614a7bcd65c2563251150c48f45e62dfb9b0cca94d0761d75d522b34b3ffae8190921163d6d0b707d62169949d3a78b519e2553d06708f05a67219dd01070458cd88dcd62afd4281a18ce858df325adb654add1a8b6f6da61f6a24f54d958e52cdb1f752c47dd9936b81c23831f2b4d1d15847afeaa56c8bf3ebd7cd235d3182b9adb84c447fd5b30935dd25c111e01c24ab89b6ac5732232f6ce83db60ec18eb6b1ff017df16cc9d55cba231dc5a99792f195e682bb6351ea2dc55c8bfb4acda062657054863eb5d47f76fa9ec7db2911a83f870dcc829672be34e03edaac71a480189c6746&amp;safeGtmJsonData=53616c7465645f5fefb37b6c27b2a0c437fa5d3e141757be97910d03634dcaf5294921ddd877f00e075676c9910bc40b21f584ab156c94bcbc58574db01d5d80" target="_blank" data-action="Click">원더직구</a></li> <li data-wsp-idx="5" data-wsp-mark="위메프" data-gtm-element="WeMakePrice" data-gtm-json="{&quot;label&quot;:&quot;위메프&quot;,&quot;index&quot;:&quot;6&quot;}"><a href="https://g.wonder-shopping.com/out/r?safeUri=53616c7465645f5fa1fcfcd33308576a6ce5a04c101d897124fbc159c00cd931f380230b22301573e04dfc0a929a316483e87b579a581c45d376e84b367fef018b064c2e982c2f5ad070f2a2d0140bcb9f51ad2b5b7b0f5294a3867498c02303fc013dbe9ee3af4969b0aae0cd855d3e0b228462cb2ac4bd8d5dc4d27b1db10178602c6faf6b9642fcec7da93bf76df9&amp;safeJsonData=53616c7465645f5ffb7150d352b5dd3530a8ca0733bed7c788fc7e9acecbcb155b7ade92592ab7046608fba7a66b73e98f548ebeeda12dab07eb6e17fc9ee347f7e42737e1099b6ebf8f37955e7ce52a4da9c7993ca3db6f2c5c72972b2c5fc6cfd19cd8b6d84fb791aa60699e13b7b63d46bfadfdb2edd7204783ad7608abe34810a10b0bdf5c4eddef5b0994db1cb0ac3858d638330f666e2356db35f20e41b98e159ab5873ad9895a705ecb489aa1035fea8a8918dda9ea9a4ed68da25ccc1c090e063b0182021b8bf7a4e2c2bb7f452e9699df73da4dd9c0d1ade9d836a3f2729b00af3b6e610daf6d035d8ae6b6e5d45c24998f187b89bc77045f5e98d003880e8bfd6eb31a57177cb13a8bac7e747ddf473acd0ea517ad4bec44178653197a0d5dbc7c31441db6a78e7712e0937432aa3dee2c7d5d9cc2e55cdce195870526812c13e8c8f3c92ce386ee23a0087c41a5ec6c5bcaf96bd442d40c474e8b2e8a57567d4da09cee9030ba8ed739008197e0fcd9178fcd1f161266735a4ac230e370ce72d7c70584003a0d52c8116b3dff68f40cf80a4572c15d6808a6fb86a5a8146539f23821e1ac48dd61f01f9aff288ebba2075db8a9037c0357958a273991b5792ee389e7b792936fec4bf4e10a3e0b681dc4354cb8042524a35ca578c3da8fcb5967a517f0c166bc92fb8fef492ade2a3e85cceec71f5dac7878a6da771491b4180bdc0eeff823d88e814948f2e1f56fe750feed74fdf66c4f72202d3ad2e6166c948b752f3cb89cf314e6cc310b613f4576ada035b0481082e07dc8997d8096555537f93a40d39b68645265c496aad038a31e8e83cf46d255b951da5227e7f340b0d1da67654a26a8f09673&amp;safeGtmJsonData=53616c7465645f5fb196ea30d469386ee7e456e72c2a9f3a2dc67bd6f57fa19d851821d779c1923018769200a7ba410f8644c50c66223a75b0ad38db263a0942" target="_blank" data-action="Click" title="위메프 홈으로 이동">위메프</a></li></ul></div></div></div></header>
+<div id="floating_latestitems" data-gtm-page="ShoppingRecommend" class="floating_latest fixed"><div data-wsp-section-name="RECENTLY" data-gtm-section="ShoppingLatestList" class="center_range wsp_section"><div class="floating"><h2><a href="/mypage/latestitems">최근 본 상품</a><!----></h2> <div class="slider_wrap"><div class="btn_ctrl"><button type="button" data-wsp-pagination="UP" data-wsp-idx="1" class="btn_prev wsp-product"><span>이전 3개 보기</span></button> <button type="button" data-wsp-pagination="DOWN" data-wsp-idx="1" class="btn_next wsp-product"><span>다음 3개 보기</span></button></div> <div class="frame"><p class="lst_none_noti">상품이 <br />없습니다.</p> <ol style="display: none;"></ol></div></div> <button type="button" data-wsp-pagination="TO-TOP" data-wsp-idx="" class="btn_top wsp-product">맨 위로</button></div></div></div>
+    <div id="container">
+    
+  <div id="aside">
+    <h2 class="tit_page">이승재 님 마이페이지</h2>
+    <div class="lnb">
+      <ul>
+        <li>
+            <a href="/mypage/latestitems" class="" onclick="Log4ws.HIT({section_name:'LEFTMENU', pagination:'BTN-LVI'});">
+                최근 본 상품 (<span id="latestitems_count">0</span>)
+            </a>
+        </li>
+        <li>
+            <a href="/mypage/wishlist" class="" onclick="Log4ws.HIT({section_name:'LEFTMENU', pagination:'BTN-ITM'});">
+                찜 한 상품 
+            </a>
+        </li>
+        <li>
+            <a href="/mypage/brands" class="" onclick="Log4ws.HIT({section_name:'LEFTMENU', pagination:'BTN-BRN'});">
+                찜 한 브랜드 
+            </a>
+        </li>
+        <li>
+            <a href="/mypage/malls" class="" onclick="Log4ws.HIT({section_name:'LEFTMENU', pagination:'BTN-MAL'});">
+                찜 한 쇼핑몰 
+            </a>
+        </li>
+        <li>
+            <a href="/mypage/reservation/" class="on" onclick="Log4ws.HIT({section_name:'LEFTMENU', pagination:'BTN-AIR'});">
+                원더투어 내여정
+            </a>
+            <ul>
+                <li>
+                    <a href="/mypage/reservation" class="on" onclick="Log4ws.HIT({section_name:'LEFTMENU', pagination:'BTN-AIR'});">
+                        나의 여행 일정
+                    </a>
+                </li>
+                <li>
+                    <a href="/mypage/reservation/?tab=history" class="" onclick="Log4ws.HIT({section_name:'LEFTMENU', pagination:'BTN-AIR-PAST'});">
+                        지난 여정 보기
+                    </a>
+                </li>
+                <li>
+                    <a href="/mypage/coupon" class="" onclick="Log4ws.HIT({section_name:'LEFTMENU', pagination:'BTN-CPN'});">
+                        내 쿠폰함
+                    </a>
+                </li>
+                <li>
+                    <a href="/mypage/tour/cs/air?type=int" class="" onclick="Log4ws.HIT({section_name:'LEFTMENU', pagination:'BTN-AIR-CS'});">
+                        고객센터
+                    </a>
+                </li>
+            </ul>
+        </li>
+        
+      </ul>
+      <div class="cs">
+        <a href="/mypage/notice" class="" onclick="Log4ws.HIT({section_name:'INFO', pagination:'NOTICE'});">공지사항</a>
+        <a href="http://www.wemakeprice.com/mypage/qna" onclick="Log4ws.HIT({section_name:'INFO', pagination:'CUS-CNTR'});">고객센터</a>
+      </div>
+    </div>
+  </div>
+
+    <div id="content"><div class="bread_crumb"><div class="navi"><a href="/" title="홈으로 이동" class="home">홈</a> <div class="cate_select"><a href="/mypage/reservation">마이페이지</a></div> <div class="cate_select"><a href="/mypage/reservation" class="current">내여정</a></div></div></div> <div class="page_myzone"><div class="my-wd-tour"><div class="tour-not-found no-schedule"><p><strong>예정된 여행이 없습니다</strong> <span>원더투어에서 새로운 여행을 계획해 보세요.<br />원더한 세상이 펼쳐집니다.</span></p></div> <!----> <!----></div></div></div>
+
+    </div>
+      <footer id="footer" role="contentinfo"><div class="noti_foot"><strong>공지사항</strong>  <a href="/mypage/notice" onclick="Log4ws.HIT({section_name:'FOOTER', pagination:'NOTICE-M'});" class="btn_more"><span class="blind">공지사항</span>더보기</a></div> <div class="lst_link"><ul><li><a href="/url?_sf=y&amp;q=&amp;s=footer-%EA%B8%B0%EC%97%85%EB%B8%94%EB%A1%9C%EA%B7%B8&amp;g=1&amp;t=&amp;data=%7B%22link%22%3A%22https%3A%2F%2Fblog.naver.com%2Fwemakepriceblog%22%2C%22vendor%22%3A%22wshopping%22%2C%22title%22%3A%22%EA%B8%B0%EC%97%85%EB%B8%94%EB%A1%9C%EA%B7%B8%22%7D&amp;section_name=FOOTER&amp;pagination=BLOG&amp;mark=&amp;kindof=HIT&amp;user_agent=Mozilla%2F5.0%20(Windows%20NT%206.1%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F72.0.3626.121%20Safari%2F537.36&amp;user_res=1400x2560&amp;current_url=https%3A%2F%2Fwww.wonder-shopping.com%2Fmypage%2Freservation%2F%3F%26is_login%3Dtrue&amp;target_url=https%3A%2F%2Fblog.naver.com%2Fwemakepriceblog&amp;vendor=wshopping&amp;epid=&amp;price=&amp;ws_1depth=&amp;ws_2depth=&amp;ws_3depth=&amp;ws_4depth=&amp;ws_5depth=&amp;product_id=&amp;brand=&amp;idx=&amp;ffuid=&amp;partner_type=CPS&amp;agency_id=&amp;product_name=%EA%B8%B0%EC%97%85%EB%B8%94%EB%A1%9C%EA%B7%B8" data-category="footer" data-action="기업블로그" data-label="https://blog.naver.com/wemakepriceblog" target="_blank">기업블로그</a></li> <li><a href="/url?_sf=y&amp;q=&amp;s=footer-%EC%9D%B8%EC%9E%AC%EC%B1%84%EC%9A%A9&amp;g=1&amp;t=&amp;data=%7B%22link%22%3A%22https%3A%2F%2Frecruit.wemakeprice.com%2Fnotice%2Flist%22%2C%22vendor%22%3A%22wshopping%22%2C%22title%22%3A%22%EC%9D%B8%EC%9E%AC%EC%B1%84%EC%9A%A9%22%7D&amp;mid=16342726&amp;remote_ip=211.174.55.156%2C%20172.31.1.65&amp;channel=WMPP&amp;page_name=TR-SCH&amp;servicecode=WSP&amp;traffic_partner_code=&amp;referer_url=http%3A%2F%2Fwww.wemakeprice.com%2Fmypage%2Fbuylist&amp;search_term=&amp;search_matches=&amp;group_no=1&amp;current_group=1&amp;utm_source=&amp;utm_term=&amp;utm_medium=&amp;utm_content=&amp;utm_campaign=&amp;idx=&amp;outlink=&amp;vendor=wshopping&amp;epid=&amp;ws_1depth=&amp;ws_2depth=&amp;ws_3depth=&amp;ws_4depth=&amp;ws_5depth=&amp;brand=&amp;ffuid=&amp;partner_type=CPS&amp;agency_id=&amp;price=&amp;product_name=%EC%9D%B8%EC%9E%AC%EC%B1%84%EC%9A%A9&amp;target_url=https%3A%2F%2Frecruit.wemakeprice.com%2Fnotice%2Flist&amp;section_name=FOOTER&amp;pagination=RECRUIT&amp;mark=&amp;kindof=HIT&amp;user_agent=Mozilla%2F5.0%20(Windows%20NT%206.1%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F72.0.3626.121%20Safari%2F537.36&amp;user_res=1400x2560&amp;current_url=https%3A%2F%2Fwww.wonder-shopping.com%2Fmypage%2Freservation%2F%3F%26is_login%3Dtrue&amp;product_id=" data-category="footer" data-action="인재채용" data-label="https://recruit.wemakeprice.com/notice/list" target="_blank">인재채용</a></li> <li><a href="/url?_sf=y&amp;q=&amp;s=footer-%EC%9D%B4%EC%9A%A9%EC%95%BD%EA%B4%80&amp;g=1&amp;t=&amp;data=%7B%22link%22%3A%22http%3A%2F%2Fwww.wemakeprice.com%2Fcustomer_center%2Fagreement%2F%22%2C%22vendor%22%3A%22wshopping%22%2C%22title%22%3A%22%EC%9D%B4%EC%9A%A9%EC%95%BD%EA%B4%80%22%7D&amp;mid=16342726&amp;remote_ip=211.174.55.156%2C%20172.31.1.65&amp;channel=WMPP&amp;page_name=TR-SCH&amp;servicecode=WSP&amp;traffic_partner_code=&amp;referer_url=http%3A%2F%2Fwww.wemakeprice.com%2Fmypage%2Fbuylist&amp;search_term=&amp;search_matches=&amp;group_no=1&amp;current_group=1&amp;utm_source=&amp;utm_term=&amp;utm_medium=&amp;utm_content=&amp;utm_campaign=&amp;idx=&amp;outlink=&amp;vendor=wshopping&amp;epid=&amp;ws_1depth=&amp;ws_2depth=&amp;ws_3depth=&amp;ws_4depth=&amp;ws_5depth=&amp;brand=&amp;ffuid=&amp;partner_type=CPS&amp;agency_id=&amp;price=&amp;product_name=%EC%9D%B4%EC%9A%A9%EC%95%BD%EA%B4%80&amp;target_url=http%3A%2F%2Fwww.wemakeprice.com%2Fcustomer_center%2Fagreement%2F&amp;section_name=FOOTER&amp;pagination=TERMS&amp;mark=&amp;kindof=HIT&amp;user_agent=Mozilla%2F5.0%20(Windows%20NT%206.1%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F72.0.3626.121%20Safari%2F537.36&amp;user_res=1400x2560&amp;current_url=https%3A%2F%2Fwww.wonder-shopping.com%2Fmypage%2Freservation%2F%3F%26is_login%3Dtrue&amp;product_id=" data-category="footer" data-action="이용약관" data-label="http://www.wemakeprice.com/customer_center/agreement/" target="_blank">이용약관</a></li> <li><a href="/url?_sf=y&amp;q=&amp;s=footer-%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EB%B0%A9%EC%B9%A8&amp;g=1&amp;t=&amp;data=%7B%22link%22%3A%22http%3A%2F%2Fwww.wemakeprice.com%2Fcustomer_center%2Fprivate_policy%2F%22%2C%22vendor%22%3A%22wshopping%22%2C%22title%22%3A%22%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EB%B0%A9%EC%B9%A8%22%7D&amp;mid=16342726&amp;remote_ip=211.174.55.156%2C%20172.31.1.65&amp;channel=WMPP&amp;page_name=TR-SCH&amp;servicecode=WSP&amp;traffic_partner_code=&amp;referer_url=http%3A%2F%2Fwww.wemakeprice.com%2Fmypage%2Fbuylist&amp;search_term=&amp;search_matches=&amp;group_no=1&amp;current_group=1&amp;utm_source=&amp;utm_term=&amp;utm_medium=&amp;utm_content=&amp;utm_campaign=&amp;idx=&amp;outlink=&amp;vendor=wshopping&amp;epid=&amp;ws_1depth=&amp;ws_2depth=&amp;ws_3depth=&amp;ws_4depth=&amp;ws_5depth=&amp;brand=&amp;ffuid=&amp;partner_type=CPS&amp;agency_id=&amp;price=&amp;product_name=%EA%B0%9C%EC%9D%B8%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EB%B0%A9%EC%B9%A8&amp;target_url=http%3A%2F%2Fwww.wemakeprice.com%2Fcustomer_center%2Fprivate_policy%2F&amp;section_name=FOOTER&amp;pagination=PRIVACY&amp;mark=&amp;kindof=HIT&amp;user_agent=Mozilla%2F5.0%20(Windows%20NT%206.1%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F72.0.3626.121%20Safari%2F537.36&amp;user_res=1400x2560&amp;current_url=https%3A%2F%2Fwww.wonder-shopping.com%2Fmypage%2Freservation%2F%3F%26is_login%3Dtrue&amp;product_id=" data-category="footer" data-action="개인정보처리방침" data-label="http://www.wemakeprice.com/customer_center/private_policy/" target="_blank">개인정보처리방침</a></li> <li><a href="/url?_sf=y&amp;q=&amp;s=footer-%EC%B2%AD%EC%86%8C%EB%85%84%EB%B3%B4%ED%98%B8%EC%A0%95%EC%B1%85&amp;g=1&amp;t=&amp;data=%7B%22link%22%3A%22http%3A%2F%2Fwww.wemakeprice.com%2Fcustomer_center%2Fyouth_policy%2F%22%2C%22vendor%22%3A%22wshopping%22%2C%22title%22%3A%22%EC%B2%AD%EC%86%8C%EB%85%84%EB%B3%B4%ED%98%B8%EC%A0%95%EC%B1%85%22%7D&amp;mid=16342726&amp;remote_ip=211.174.55.156%2C%20172.31.1.65&amp;channel=WMPP&amp;page_name=TR-SCH&amp;servicecode=WSP&amp;traffic_partner_code=&amp;referer_url=http%3A%2F%2Fwww.wemakeprice.com%2Fmypage%2Fbuylist&amp;search_term=&amp;search_matches=&amp;group_no=1&amp;current_group=1&amp;utm_source=&amp;utm_term=&amp;utm_medium=&amp;utm_content=&amp;utm_campaign=&amp;idx=&amp;outlink=&amp;vendor=wshopping&amp;epid=&amp;ws_1depth=&amp;ws_2depth=&amp;ws_3depth=&amp;ws_4depth=&amp;ws_5depth=&amp;brand=&amp;ffuid=&amp;partner_type=CPS&amp;agency_id=&amp;price=&amp;product_name=%EC%B2%AD%EC%86%8C%EB%85%84%EB%B3%B4%ED%98%B8%EC%A0%95%EC%B1%85&amp;target_url=http%3A%2F%2Fwww.wemakeprice.com%2Fcustomer_center%2Fyouth_policy%2F&amp;section_name=FOOTER&amp;pagination=PROTECT&amp;mark=&amp;kindof=HIT&amp;user_agent=Mozilla%2F5.0%20(Windows%20NT%206.1%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F72.0.3626.121%20Safari%2F537.36&amp;user_res=1400x2560&amp;current_url=https%3A%2F%2Fwww.wonder-shopping.com%2Fmypage%2Freservation%2F%3F%26is_login%3Dtrue&amp;product_id=" data-category="footer" data-action="청소년보호정책" data-label="http://www.wemakeprice.com/customer_center/youth_policy/" target="_blank">청소년보호정책</a></li> <li><a href="/url?_sf=y&amp;q=&amp;s=footer-%EC%A0%9C%ED%9C%B4%EB%AC%B8%EC%9D%98&amp;g=1&amp;t=&amp;data=%7B%22link%22%3A%22http%3A%2F%2Fwww.wemakeprice.com%2Fguide_book%2Fcontact_info%22%2C%22vendor%22%3A%22wshopping%22%2C%22title%22%3A%22%EC%A0%9C%ED%9C%B4%EB%AC%B8%EC%9D%98%22%7D&amp;mid=16342726&amp;remote_ip=211.174.55.156%2C%20172.31.1.65&amp;channel=WMPP&amp;page_name=TR-SCH&amp;servicecode=WSP&amp;traffic_partner_code=&amp;referer_url=http%3A%2F%2Fwww.wemakeprice.com%2Fmypage%2Fbuylist&amp;search_term=&amp;search_matches=&amp;group_no=1&amp;current_group=1&amp;utm_source=&amp;utm_term=&amp;utm_medium=&amp;utm_content=&amp;utm_campaign=&amp;idx=&amp;outlink=&amp;vendor=wshopping&amp;epid=&amp;ws_1depth=&amp;ws_2depth=&amp;ws_3depth=&amp;ws_4depth=&amp;ws_5depth=&amp;brand=&amp;ffuid=&amp;partner_type=CPS&amp;agency_id=&amp;price=&amp;product_name=%EC%A0%9C%ED%9C%B4%EB%AC%B8%EC%9D%98&amp;target_url=http%3A%2F%2Fwww.wemakeprice.com%2Fguide_book%2Fcontact_info&amp;section_name=FOOTER&amp;pagination=PARTNER&amp;mark=&amp;kindof=HIT&amp;user_agent=Mozilla%2F5.0%20(Windows%20NT%206.1%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F72.0.3626.121%20Safari%2F537.36&amp;user_res=1400x2560&amp;current_url=https%3A%2F%2Fwww.wonder-shopping.com%2Fmypage%2Freservation%2F%3F%26is_login%3Dtrue&amp;product_id=" data-category="footer" data-action="제휴문의" data-label="http://www.wemakeprice.com/guide_book/contact_info" target="_blank">제휴문의</a></li> <li><a href="/url?_sf=y&amp;q=&amp;s=footer-%EA%B3%A0%EA%B0%9D%EC%84%9C%EB%B9%84%EC%8A%A4&amp;g=1&amp;t=&amp;data=%7B%22link%22%3A%22http%3A%2F%2Fpromotion.wemakeprice.com%2Fpromotion%2Fwonder_0%2Fpreview%22%2C%22vendor%22%3A%22wshopping%22%2C%22title%22%3A%22%EA%B3%A0%EA%B0%9D%EC%84%9C%EB%B9%84%EC%8A%A4%22%7D&amp;mid=16342726&amp;remote_ip=211.174.55.156%2C%20172.31.1.65&amp;channel=WMPP&amp;page_name=TR-SCH&amp;servicecode=WSP&amp;traffic_partner_code=&amp;referer_url=http%3A%2F%2Fwww.wemakeprice.com%2Fmypage%2Fbuylist&amp;search_term=&amp;search_matches=&amp;group_no=1&amp;current_group=1&amp;utm_source=&amp;utm_term=&amp;utm_medium=&amp;utm_content=&amp;utm_campaign=&amp;idx=&amp;outlink=&amp;vendor=wshopping&amp;epid=&amp;ws_1depth=&amp;ws_2depth=&amp;ws_3depth=&amp;ws_4depth=&amp;ws_5depth=&amp;brand=&amp;ffuid=&amp;partner_type=CPS&amp;agency_id=&amp;price=&amp;product_name=%EA%B3%A0%EA%B0%9D%EC%84%9C%EB%B9%84%EC%8A%A4&amp;target_url=http%3A%2F%2Fpromotion.wemakeprice.com%2Fpromotion%2Fwonder_0%2Fpreview&amp;section_name=FOOTER&amp;pagination=C-SERVICE&amp;mark=&amp;kindof=HIT&amp;user_agent=Mozilla%2F5.0%20(Windows%20NT%206.1%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F72.0.3626.121%20Safari%2F537.36&amp;user_res=1400x2560&amp;current_url=https%3A%2F%2Fwww.wonder-shopping.com%2Fmypage%2Freservation%2F%3F%26is_login%3Dtrue&amp;product_id=" data-category="footer" data-action="고객서비스" data-label="http://promotion.wemakeprice.com/promotion/wonder_0/preview" target="_blank">고객서비스</a></li></ul></div> <section class="foot_wrap"><h1><img src="/static//img/p/foot_logo.png" alt="원더쇼핑" /></h1> <address>
+        (주)위메프 (대표이사 : 박은상)  ㅣ  주소 : 서울특별시 강남구 영동대로 502 위메프빌딩 <br />
+사업자등록번호 : 120-87-55227  ㅣ  통신판매업신고번호 : 제 2010 서울 강남 02066호  ㅣ  사업자정보 확인 <a href="http://www.ftc.go.kr/bizCommPop.do?wrkr_no=1208755227&amp;apv_perm_no=">&gt;</a><br />
+관광사업등록번호 : 제2010-000024호  ㅣ  고객센터 (<a href="mailto:tec@wemakeprice.com">tec@wemakeprice.com</a>)<br /> <br /> <strong>(주)위메프는 통신판매중개자로서 통신판매의 당사자가 아니며 상품의 정보 및 주문, 배송, 환불 등에 대한 책임은 각 판매자에게 있습니다.</strong></address> <div class="contact_us"><h2>고객센터</h2> <div class="cont"><em class="num">1588-4763</em> <dl><dt>평일</dt> <dd>09:00 - 18:00</dd> <dt>주말/공휴일</dt> <dd>10:00 - 17:00</dd></dl></div> <p class="copyright">
+          COPYRIGHT © WEMAKEPRICE INC. ALL RIGHTS RESERVED.
+        </p></div></section> <!----> <!----></footer>
+</div>
+<script src="/static/js/common.pc.js?1548898718.117556" defer=""></script>
+<script src="/static/js/p/main_header.js?1548898718.117556" defer=""></script>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript>&lt;iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVK68F6"
+height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<script type="text/javascript" defer="" src="/static/js/p/footer.js?1548898718.117556"></script>
+
+
+
+<script type="x-template" id="modal-alert-template">
+ &lt;!-- 팝업 : 코드레벨에서의 위치는 body태그 닫기 전에 추가--&gt;
+  &lt;div class="pop_alert" &gt;
+    &lt;div class="pop_cont"&gt;
+      &lt;p class="mention"&gt;
+        [[message||'찜 한 상품이 추가되었습니다.']]
+      &lt;/p&gt;
+      &lt;div class="btn_area"&gt;
+        &lt;button type="button" class="btn_confirm" @click="$emit('close')"&gt;확인&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;!--// 팝업 --&gt;
+</script>
+
+<script type="x-template" id="modal-template">
+&lt;!-- 팝업 : 코드레벨에서의 위치는 body태그 닫기 전에 추가--&gt;
+  &lt;div class="pop_alert confirm"&gt;
+    &lt;div class="pop_cont"&gt;
+        &lt;slot name="body"&gt;
+      &lt;p class="mention" slot="body"&gt;
+        로그인이 필요합니다. &lt;br&gt;로그인 하시겠습니까?
+      &lt;/p&gt;
+        &lt;/slot&gt;
+      &lt;div class="btn_area"&gt;
+        &lt;slot name="footer"&gt;
+        &lt;button type="button" class="btn_cancel"  @click="$emit('cancel')"&gt;취소&lt;/button&gt;
+        &lt;button type="button" class="btn_confirm"  @click="$emit('close')"&gt;확인&lt;/button&gt;
+        &lt;/slot&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;!--// 팝업 --&gt;
+</script>
+
+<script type="text/javascript" defer="" src="/static/js/p/modal.js?1548898718.117556"></script>
+
+
+<script type="text/javascript">
+var air_reservation_mode = "reservation";
+</script>
+<script type="text/javascript" src="/static/js/p/reservations.js?1548898718.117556" defer=""></script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
+
+<script type="application/javascript" defer="" src="https://s3.ap-northeast-2.amazonaws.com/s3-stuff.wemakeprice.com/log4wsNoJQAutoHit.js?env=production&amp;mode=auto&amp;1548898718.117556"></script>
+
+
+
+
+
+</body></html>

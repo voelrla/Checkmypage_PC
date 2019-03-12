@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="10" total="20" passed="10">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="71659" started-at="2019-03-12T06:02:06Z" finished-at="2019-03-12T06:03:17Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="71659" started-at="2019-03-12T06:02:06Z" finished-at="2019-03-12T06:03:17Z">
+      <class name="Checkmypage_PC.Checkmypage_PC.Mypage_Nuseticket">
+        <test-method status="PASS" signature="setup()[pri:0, instance:Checkmypage_PC.Checkmypage_PC.Mypage_Nuseticket@57fffcd7]" name="setup" is-config="true" duration-ms="21291" started-at="2019-03-12T06:02:06Z" finished-at="2019-03-12T06:02:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="Mypage_Nuticketapply()[pri:1, instance:Checkmypage_PC.Checkmypage_PC.Mypage_Nuseticket@57fffcd7]" name="Mypage_Nuticketapply" duration-ms="5240" started-at="2019-03-12T06:02:27Z" finished-at="2019-03-12T06:02:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Mypage_Nuticketapply -->
+      </class> <!-- Checkmypage_PC.Checkmypage_PC.Mypage_Nuseticket -->
+      <class name="Checkmypage_PC.Checkmypage_PC.Mypage_Mmodify">
+        <test-method status="PASS" signature="Mypage_Rcoupon()[pri:1, instance:Checkmypage_PC.Checkmypage_PC.Mypage_Mmodify@31ef45e3]" name="Mypage_Rcoupon" duration-ms="5929" started-at="2019-03-12T06:02:37Z" finished-at="2019-03-12T06:02:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Mypage_Rcoupon -->
+      </class> <!-- Checkmypage_PC.Checkmypage_PC.Mypage_Mmodify -->
+      <class name="Checkmypage_PC.Checkmypage_PC.Mypage_Review">
+        <test-method status="PASS" signature="Mypage_Rcoupon()[pri:1, instance:Checkmypage_PC.Checkmypage_PC.Mypage_Review@598067a5]" name="Mypage_Rcoupon" duration-ms="4444" started-at="2019-03-12T06:02:32Z" finished-at="2019-03-12T06:02:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Mypage_Rcoupon -->
+      </class> <!-- Checkmypage_PC.Checkmypage_PC.Mypage_Review -->
+      <class name="Checkmypage_PC.Checkmypage_PC.Mypage_Orderlist">
+        <test-method status="PASS" signature="MypageMain()[pri:1, instance:Checkmypage_PC.Checkmypage_PC.Mypage_Orderlist@3c0ecd4b]" name="MypageMain" duration-ms="5979" started-at="2019-03-12T06:02:43Z" finished-at="2019-03-12T06:02:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MypageMain -->
+      </class> <!-- Checkmypage_PC.Checkmypage_PC.Mypage_Orderlist -->
+      <class name="Checkmypage_PC.Checkmypage_PC.Mypage_QnA">
+        <test-method status="PASS" signature="Mypage_Rcoupon()[pri:1, instance:Checkmypage_PC.Checkmypage_PC.Mypage_QnA@14bf9759]" name="Mypage_Rcoupon" duration-ms="3846" started-at="2019-03-12T06:02:49Z" finished-at="2019-03-12T06:02:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Mypage_Rcoupon -->
+      </class> <!-- Checkmypage_PC.Checkmypage_PC.Mypage_QnA -->
+      <class name="Checkmypage_PC.Checkmypage_PC.Mypage_Coupon">
+        <test-method status="PASS" signature="Mypage_Rcoupon()[pri:1, instance:Checkmypage_PC.Checkmypage_PC.Mypage_Coupon@5f341870]" name="Mypage_Rcoupon" duration-ms="4866" started-at="2019-03-12T06:02:52Z" finished-at="2019-03-12T06:02:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Mypage_Rcoupon -->
+      </class> <!-- Checkmypage_PC.Checkmypage_PC.Mypage_Coupon -->
+      <class name="Checkmypage_PC.Checkmypage_PC.Mypage_Point">
+        <test-method status="PASS" signature="Mypage_Rcoupon()[pri:1, instance:Checkmypage_PC.Checkmypage_PC.Mypage_Point@553f17c]" name="Mypage_Rcoupon" duration-ms="4539" started-at="2019-03-12T06:02:57Z" finished-at="2019-03-12T06:03:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Mypage_Rcoupon -->
+      </class> <!-- Checkmypage_PC.Checkmypage_PC.Mypage_Point -->
+      <class name="Checkmypage_PC.Checkmypage_PC.Mypage_Que">
+        <test-method status="PASS" signature="Mypage_Rcoupon()[pri:1, instance:Checkmypage_PC.Checkmypage_PC.Mypage_Que@4f7d0008]" name="Mypage_Rcoupon" duration-ms="4104" started-at="2019-03-12T06:03:02Z" finished-at="2019-03-12T06:03:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Mypage_Rcoupon -->
+      </class> <!-- Checkmypage_PC.Checkmypage_PC.Mypage_Que -->
+      <class name="Checkmypage_PC.Checkmypage_PC.Mypage_Wishlist">
+        <test-method status="PASS" signature="Mypage_ReWish()[pri:1, instance:Checkmypage_PC.Checkmypage_PC.Mypage_Wishlist@271053e1]" name="Mypage_ReWish" duration-ms="8022" started-at="2019-03-12T06:03:06Z" finished-at="2019-03-12T06:03:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Mypage_ReWish -->
+      </class> <!-- Checkmypage_PC.Checkmypage_PC.Mypage_Wishlist -->
+      <class name="Checkmypage_PC.Checkmypage_PC.Mypage_Cancel">
+        <test-method status="PASS" signature="Mypage_Recancel()[pri:1, instance:Checkmypage_PC.Checkmypage_PC.Mypage_Cancel@589838eb]" name="Mypage_Recancel" duration-ms="3292" started-at="2019-03-12T06:03:14Z" finished-at="2019-03-12T06:03:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Mypage_Recancel -->
+      </class> <!-- Checkmypage_PC.Checkmypage_PC.Mypage_Cancel -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
