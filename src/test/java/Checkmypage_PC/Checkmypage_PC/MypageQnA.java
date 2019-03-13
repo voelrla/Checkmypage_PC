@@ -10,7 +10,7 @@ import com.codeborne.selenide.impl.Html;
 import static com.codeborne.selenide.Selenide.*;
 
 public class MypageQnA extends MypageStart {
-	@Test(priority = 1)
+	@Test
 	public void Mypage_Rcoupon() throws Exception {
 		open("http://www.wemakeprice.com/mypage/deal_qna_list");
 //		$(By.id("pop_btn_don_show1")).click();
@@ -26,10 +26,10 @@ public class MypageQnA extends MypageStart {
 		screenshot("mypage_rqna");
 	}
 
-	@Test(priority = 2)
+	@Test
 	public void Mypage_Dcoupon() throws Exception {
 
-		$(By.linkText("상품beta")).click();
+		open("https://front.wemakeprice.com/cs/qna/list/prod");
 		String Curl = driver.getCurrentUrl();
 		String Htext = $(By.xpath("//h4[contains(.,'상품Q&A')]")).getText();
 

@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class MypageOrderlist extends MypageStart {
 
-	@Test(priority = 1)
+	@Test
 	public void MypageMain() throws Exception {
 
 //		$(By.linkText("마이페이지")).click();
@@ -28,10 +28,10 @@ public class MypageOrderlist extends MypageStart {
 		screenshot("mypage_main");
 	}
 
-	@Test(priority = 2)
+	@Test
 	public void Mypage_Deorder() throws Exception {
 
-		$(By.linkText("상품beta")).click();
+		open("https://front.wemakeprice.com/mypage/orders");
 		String Curl = driver.getCurrentUrl();
 		String Htext = $(By.xpath("//h4[contains(.,'주문배송조회')]")).getText();
 
@@ -43,10 +43,10 @@ public class MypageOrderlist extends MypageStart {
 		screenshot("mypage_deorder");
 	}
 
-	@Test(priority = 3)
+	@Test
 	public void Mypage_ticket() throws Exception {
 
-		$(By.linkText("티켓")).click();
+		open("http://www.wemakeprice.com/mypage/buylist/usable_ticket_list");
 		String Curl = driver.getCurrentUrl();
 		String Htext = $(By.xpath("//h3[contains(.,'주문배송조회')]")).getText();
 
@@ -58,11 +58,11 @@ public class MypageOrderlist extends MypageStart {
 		screenshot("mypage_ticket");
 	}
 
-	@Test(priority = 4)
+	@Test
 	public void Mypage_Airticket() throws Exception {
 
-		$(By.linkText("항공·호텔 예약")).click();
-		switchTo().window(1); // 탭 이동
+		open("https://www.wonder-shopping.com/mypage/reservation/?&is_login=true");
+//		switchTo().window(1); // 탭 이동
 		String Curl = driver.getCurrentUrl();
 //		String Htext = $(By.xpath("//h4[contains(.,'주문배송조회')]")).getText();
 
@@ -73,6 +73,6 @@ public class MypageOrderlist extends MypageStart {
 //		assertTrue(Htext.contains("주문배송조회")); // 현재 페이지內 객체 체크
 		CheckRcode(); // ResponseCode 200 체크
 		screenshot("mypage_airticket");
-		switchTo().window(0); // 탭 이동
+//		switchTo().window(0); // 탭 이동
 	}
 }

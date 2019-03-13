@@ -10,8 +10,8 @@ import com.codeborne.selenide.impl.Html;
 import static com.codeborne.selenide.Selenide.*;
 
 public class MypageReview extends MypageStart {
-	@Test(priority = 1)
-	public void Mypage_Rcoupon() throws Exception {
+	@Test
+	public void Mypage_Rreview() throws Exception {
 		open("http://www.wemakeprice.com/mypage/deal_review_list");
 //		$(By.id("pop_btn_don_show1")).click();
 		String Curl = driver.getCurrentUrl();
@@ -26,18 +26,18 @@ public class MypageReview extends MypageStart {
 		screenshot("mypage_rreview");
 	}
 
-	@Test(priority = 2)
-	public void Mypage_Dcoupon() throws Exception {
+	@Test
+	public void Mypage_Dreview() throws Exception {
 
-		$(By.linkText("상품beta")).click();
+		open("https://front.wemakeprice.com/mypage/reviews");
 		String Curl = driver.getCurrentUrl();
-		String Htext = $(By.xpath("//h4[contains(.,'구매후기')]")).getText();
+		String Htext = $(By.xpath("//div[2]/div[2]/div[2]")).getText();
 
 		System.out.println(Curl);
 //		System.out.println(Htext);
 
 		assertTrue(Html.text.contains(Curl, "https://front.wemakeprice.com/mypage/reviews")); // URL체크 // 체크
-		assertTrue(Htext.contains("상품Q&A")); // 현재 페이지內 객체 체크
+		assertTrue(Htext.contains("구매후기")); // 현재 페이지內 객체 체크
 		CheckRcode(); // ResponseCode 200 체크
 		screenshot("mypage_dreview");
 	}

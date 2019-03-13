@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class MypageCoupon extends MypageStart {
 
-	@Test(priority = 1)
+	@Test
 	public void Mypage_Rcoupon() throws Exception {
 		open("http://www.wemakeprice.com/mypage/saleCoupon/usable");
 //		$(By.id("pop_btn_don_show1")).click();
@@ -27,10 +27,10 @@ public class MypageCoupon extends MypageStart {
 		screenshot("mypage_rcoupon");
 	}
 
-	@Test(priority = 2)
+	@Test
 	public void Mypage_Dcoupon() throws Exception {
 
-		$(By.linkText("상품beta")).click();
+		open("https://front.wemakeprice.com/mypage/coupon");
 		String Curl = driver.getCurrentUrl();
 		String Htext = $(By.xpath("//h4[contains(.,'할인쿠폰')]")).getText();
 

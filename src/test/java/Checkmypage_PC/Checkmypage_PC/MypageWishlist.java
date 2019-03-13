@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class MypageWishlist extends MypageStart {
 
-	@Test(priority = 1)
+	@Test
 	public void Mypage_ReWish() throws Exception {
 		open("http://www.wemakeprice.com/mypage/buylist/wish_list");
 //		$(By.id("pop_btn_don_show1")).click();
@@ -27,10 +27,10 @@ public class MypageWishlist extends MypageStart {
 		screenshot("mypage_rewish");
 	}
 
-	@Test(priority = 2)
+	@Test
 	public void Mypage_DeWish() throws Exception {
 
-		$(By.linkText("상품beta")).click();
+		open("https://front.wemakeprice.com/mypage/wishlist");
 		String Curl = driver.getCurrentUrl();
 		String Htext = $(By.xpath("//h4[contains(.,'찜 리스트')]")).getText();
 
@@ -43,10 +43,10 @@ public class MypageWishlist extends MypageStart {
 		screenshot("mypage_dewish");
 	}
 
-	@Test(priority = 3)
+	@Test
 	public void Mypage_PaWish() throws Exception {
 
-		$(By.linkText("파트너몰")).click();
+		open("https://front.wemakeprice.com/mypage/wishlist/partnermall");
 		String Curl = driver.getCurrentUrl();
 		String Htext = $(By.xpath("//h4[contains(.,'찜 리스트')]")).getText();
 

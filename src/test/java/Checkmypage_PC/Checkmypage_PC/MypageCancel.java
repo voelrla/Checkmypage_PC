@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class MypageCancel extends MypageStart {
 
-	@Test(priority = 1)
+	@Test
 	public void Mypage_Recancel() throws Exception {
 		open("http://www.wemakeprice.com/mypage/buylist/cancel_ing_list_v2");
 //		$(By.id("pop_btn_don_show1")).click();
@@ -27,10 +27,10 @@ public class MypageCancel extends MypageStart {
 		screenshot("mypage_recancel");
 	}
 
-	@Test(priority = 2)
+	@Test
 	public void Mypage_Decancel() throws Exception {
 
-		$(By.linkText("상품beta")).click();
+		open("https://front.wemakeprice.com/mypage/claim");
 		String Curl = driver.getCurrentUrl();
 		String Htext = $(By.xpath("//h4[contains(.,'취소/교환/반품 조회')]")).getText();
 

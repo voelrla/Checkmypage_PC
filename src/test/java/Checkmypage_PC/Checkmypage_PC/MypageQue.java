@@ -10,7 +10,7 @@ import com.codeborne.selenide.impl.Html;
 import static com.codeborne.selenide.Selenide.*;
 
 public class MypageQue extends MypageStart {
-	@Test(priority = 1)
+	@Test
 	public void Mypage_Rcoupon() throws Exception {
 		open("http://www.wemakeprice.com/mypage/qna");
 //		$(By.id("pop_btn_don_show1")).click();

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-	<test name="Test">
+	<test name="Test" preserve-order="false">
+
 		<classes>
-			<class name="Checkmypage_PC.Checkmypage_PC.MypageStart" />
 			<class name="Checkmypage_PC.Checkmypage_PC.MypageOrderlist" />
 			<class name="Checkmypage_PC.Checkmypage_PC.MypageCancel" />
 			<class name="Checkmypage_PC.Checkmypage_PC.MypageNuseticket" />
@@ -14,6 +14,8 @@
 			<class name="Checkmypage_PC.Checkmypage_PC.MypageReview" />
 			<class name="Checkmypage_PC.Checkmypage_PC.MypageQue" />
 			<class name="Checkmypage_PC.Checkmypage_PC.MypageMmodify" />
+
 		</classes>
+
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
